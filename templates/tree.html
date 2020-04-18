@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+<b style="color: rgb(45, 0, 128)" >Enter Argument Formula:</b><br />
+{{ form }}
+<br /><br />
+<br />
+
+{% if closed %}
+<div style="color: green">Argument is a Tautology!</div>
+{% else %}
+<div style="color: red">Argument is not a Tautology!</div>
+{% endif %}
+<div class="tree">
+    <ul>
+        {{ tree }}
+    </ul>
+
+</div>
+
+<div style="margin-bottom: 100px"></div>
+{% include 'footer.html' %}
